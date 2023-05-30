@@ -32,7 +32,7 @@ class Square:
         """ Compare two squares """
         return self.area() == other.area()
 
-    def __nt_e__(self, other):
+    def __nte__(self, other):
         """ Compare != two squares """
         return self.area() != other.area()
 
@@ -40,7 +40,7 @@ class Square:
         """ Comparing < two squares """
         return self.area() < other.area()
 
-    def __les_e__(self, other):
+    def __lese__(self, other):
         """ Compare <= two squares """
         return self.area() <= other.area()
 
@@ -48,6 +48,6 @@ class Square:
         """ Compare > two squares """
         return self.area() > other.area()
 
-    def __grt_e__(self, other):
+    def __grte__(self, other):
         """ Compare >= two squares """
         return self.area() >= other.area()
