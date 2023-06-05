@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-
-"""
-Solves the N-queens puzzle.
+# 101-nqueens.py
+"""Solves the N-queens puzzle.
 
 Determines all possible solutions to placing N
 N non-attacking queens on an NxN chessboard.
@@ -48,8 +47,8 @@ def get_solution(board):
     return (solution)
 
 
-def xmark(board, row, col):
-    """X-mark out spots on a chessboard.
+def xout(board, row, col):
+    """X out spots on a chessboard.
 
     All spots where non-attacking queens can no
     longer be played are X-ed out.
@@ -59,40 +58,40 @@ def xmark(board, row, col):
         row (int): The row where a queen was last played.
         col (int): The column where a queen was last played.
     """
-    # X-mark out all forward spots
+    # X out all forward spots
     for c in range(col + 1, len(board)):
         board[row][c] = "x"
-    # X-mark out all backwards spots
+    # X out all backwards spots
     for c in range(col - 1, -1, -1):
         board[row][c] = "x"
-    # X-mark out all spots below
+    # X out all spots below
     for r in range(row + 1, len(board)):
         board[r][col] = "x"
     # X out all spots above
     for r in range(row - 1, -1, -1):
         board[r][col] = "x"
-    # X-mark out all spots diagonally down to the right
+    # X out all spots diagonally down to the right
     c = col + 1
     for r in range(row + 1, len(board)):
         if c >= len(board):
             break
         board[r][c] = "x"
         c += 1
-    # X-mark out all spots diagonally up to the left
+    # X out all spots diagonally up to the left
     c = col - 1
     for r in range(row - 1, -1, -1):
         if c < 0:
             break
         board[r][c]
         c -= 1
-    # X-mark out all spots diagonally up to the right
+    # X out all spots diagonally up to the right
     c = col + 1
     for r in range(row - 1, -1, -1):
         if c >= len(board):
             break
         board[r][c] = "x"
         c += 1
-    # X-mark out all spots diagonally down to the left
+    # X out all spots diagonally down to the left
     c = col - 1
     for r in range(row + 1, len(board)):
         if c < 0:
@@ -101,8 +100,8 @@ def xmark(board, row, col):
         c -= 1
 
 
-def _solve(board, row, queens, solutions):
-    """Solve an N-queens puzzle in recursion.
+def recursive_solve(board, row, queens, solutions):
+    """Recursively solve an N-queens puzzle.
 
     Args:
         board (list): The current working chessboard.
@@ -120,8 +119,8 @@ def _solve(board, row, queens, solutions):
         if board[row][c] == " ":
             tmp_board = board_deepcopy(board)
             tmp_board[row][c] = "Q"
-            xmark(tmp_board, row, c)
-            solutions = _solve(tmp_board, row + 1,
+            xout(tmp_board, row, c)
+            solutions = recursive_solve(tmp_board, row + 1,
                                         queens + 1, solutions)
 
     return (solutions)
@@ -139,9 +138,10 @@ if __name__ == "__main__":
         sys.exit(1)
 
     board = init_board(int(sys.argv[1]))
-    solutions = _solve(board, 0, 0, [])
-    for solution in solutions:
-        print(solution)
+    solutions = recursive_solve(board, 0, 0, [])
+    for sol in solutions:
+        print(sol)
     print("Found %d solutions" % len(solutions))
 
     sys.exit(0)
+# End of 101-nqueens.py
