@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Create a Rectangle class
-"""
+""" Create a Rectangle class """
 
 
 class Rectangle:
@@ -43,8 +41,6 @@ class Rectangle:
     def width(self, value):
         """
         Checks the parameters and set the size of the Rectangle
-        Args:
-            value (int): The width of the Rectangle.
         Raises:
             TypeError: If `value` type is not `int`.
             ValueError: If `value` is less than `0`.
@@ -65,8 +61,6 @@ class Rectangle:
     def height(self, value):
         """
         Checks the parameters and set the size of the Rectangle
-        Args:
-            value (int): The height of the Rectangle.
         Raises:
             TypeError: If `value` type is not `int`.
             ValueError: If `value` is less than `0`.
@@ -78,8 +72,6 @@ class Rectangle:
     def __check_valid_width(self, width):
         """
         Checks if the width is a valid integer
-        Args:
-            width (int): The width of the Rectangle.
         Raises:
             TypeError: If `width` type is not `int`.
             ValueError: If `width` is less than `0`.
@@ -94,8 +86,6 @@ class Rectangle:
     def __check_valid_height(self, height):
         """
         Checks if the height is a valid integer
-        Args:
-            height (int): The height of the Rectangle.
         Raises:
             TypeError: If `height` type is not `int`.
             ValueError: If `height` is less than `0`.
@@ -110,10 +100,8 @@ class Rectangle:
     def __check_int_value(self, value):
         """
         Checks if the value is an integer
-        Args:
-            value (int): The number to verify
         Returns:
-            int: If is a int `True`, `False` otherwise.
+            int: If is a int `True`, otherwise `False`.
         """
 
         if not isinstance(value, int):
@@ -124,11 +112,9 @@ class Rectangle:
     def __check_positive_value(self, value):
         """
         Checks if the value is a positive integer
-        Args:
-            value (int): The number to verify
         Returns:
             int: `True` If value is greater than
-            or equal to 0, `False` otherwise.
+            or equal to 0, otherwise `False`.
         """
 
         if value >= 0:
