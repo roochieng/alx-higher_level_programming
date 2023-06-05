@@ -3,7 +3,5 @@
 """Creating a rectangle class"""
 
 class Rectangle:
-    """
-    This is a class that defines a rectangle
-    """
+    """This is a class that defines a rectangle"""
     pass
