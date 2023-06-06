@@ -1,4 +1,9 @@
+The "0-add_integer" module
 ===========================
+
+Using "add_integer"
+---------------------------
+
 How to Use 0-add_integer.py
 =dd_integer = __import__('0-add_integer').add_integer
 
