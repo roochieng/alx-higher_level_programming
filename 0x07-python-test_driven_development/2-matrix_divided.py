@@ -17,35 +17,20 @@ def matrix_divided(matrix, div):
     All elements of the matrix should be divided by div,
     rounded to 2 decimal places
     """
-    tmplist = []
-    if all(isinstance(elem, list) for elem in matrix) == False:
-        raise TypeError("matrix must be a matrix (list of lists) 
-	of integers/floats")
+    if (not isinstance(matrix, list) or matrix == [] or
+            not all(isinstance(row, list) for row in matrix) or
+            not all((isinstance(ele, int) or isinstance(ele, float))
+                    for ele in [num for row in matrix for num in row])):
+        raise TypeError("matrix must be a matrix (list of lists) of "
+                        "integers/floats")
 
-    for a in len(matrix):
-        for b in len(matrix[a - 1]):
-	    if type(matrix[a - 1][b - 1]) != int or
-	    type(matrix[a - 1][b - 1]) != int:
-	        raise TypeError("matrix must be a matrix (list of lists)
-		of integers/floats")
-	    b += 1
-	a += 1
+    if not all(len(row) == len(matrix[0]) for row in matrix):
+        raise TypeError("Each row of the matrix must have the same size")
 
-    for i in len(matrix):
-        if len(matrix[i]) != len(matrix[i - 1]:
-	    raise TypeError("matrix must be a matrix (list of lists) 
-	    of integers/floats")
-	i += 1
-
-    if type(div) != int or type(div) != float:
+    if not isinstance(div, int) and not isinstance(div, float):
         raise TypeError("div must be a number")
+
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    for k in range(matrix) - 1:
-        for l in matrix[k] - 1:
-	    num = round(l/div, 2)
-	    tmplist = tmplist.append(num)
-	    l += 1
-	k += 1
-	tmplist = tmplist.append(matrix)
-    return(tmplist)
+
+    return ([list(map(lambda x: round(x / div, 2), row)) for row in matrix])
