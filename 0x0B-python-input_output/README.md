@@ -1,13 +1,16 @@
 Resources
 Read or watch:
 
-7.2. Reading and Writing Files
-8.7. Predefined Clean-up Actions
-Dive Into Python 3: Chapter 11. Files (until “11.4 Binary Files” (included))
-JSON encoder and decoder
-Learn to Program 8 : Reading / Writing Files
-Automate the Boring Stuff with Python (ch. 8 p 180-183 and ch. 14 p 326-333)
-All about py-file I/O
+Resources
+Read or watch:
+[7.2. Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+[8.7. Predefined Clean-up Actions](https://docs.python.org/3/tutorial/errors.html#predefined-clean-up-actions)
+[Dive Into Python 3: Chapter 11. Files ](https://histo.ucsf.edu/BMS270/diveintopython3-r802.pdf)
+[JSON encoder and decoder](https://docs.python.org/3/library/json.html)
+[Learn to Program 8 : Reading / Writing Files](https://www.youtube.com/watch?v=EukxMIsNeqU)
+[Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+[All about py-file I/O](https://techvidvan.com/tutorials/python-file-read-write/)
+
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
@@ -30,6 +33,7 @@ You are tasked to come up with solutions for the tasks below yourself to meet wi
 You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
 You are not allowed to publish any content of this project.
 Any form of plagiarism is strictly forbidden and will result in removal from the program.
+
 Requirements
 Python Scripts
 Allowed editors: vi, vim, emacs
