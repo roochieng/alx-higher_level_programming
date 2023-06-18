@@ -1,8 +1,8 @@
 
-#Background Context
+# Background Context
 The AirBnB project is a big part of the Higher level curriculum. This project will help you be ready for it.
 
-##In this project, you will review everything about Python:
+## In this project, you will review everything about Python:
 
 Import
 Exceptions
@@ -15,15 +15,16 @@ Inheritance
 Unittest
 Read/Write file
 
-###You will also learn about:
+### You will also learn about:
 
 args and kwargs
 Serialization/Deserialization
 JSON
 
 
-#Resources
-###Read or watch:
+# Resources
+
+### Read or watch:
 
 [args/kwargs](https://intranet.alxswe.com/rltoken/7gc6UzxSL81HcuAwklUbuQ)
 
@@ -33,11 +34,11 @@ JSON
 
 [Python test cheatsheet](https://intranet.alxswe.com/rltoken/uI9iskBCcNo5pc7j9Vy86A)
 
-##Learning Objectives
+## Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-###General
+### General
 What is Unit testing and how to implement it in a large project
 How to serialize and deserialize a Class
 How to write and read a JSON file
@@ -45,7 +46,7 @@ What is *args and how to use it
 What is **kwargs and how to use it
 How to handle named arguments in a function
 
-###Copyright - Plagiarism
+### Copyright - Plagiarism
 
 You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
 You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
@@ -53,9 +54,9 @@ You are not allowed to publish any content of this project.
 Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
 
-##Requirements
+## Requirements
 
-###Python Scripts
+### Python Scripts
 Allowed editors: vi, vim, emacs
 All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
 All your files should end with a new line
@@ -69,7 +70,7 @@ All your classes should be documented: python3 -c 'print(__import__("my_module")
 All your functions (inside and outside a class) should be documented: python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'
 A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 
-###Python Unit Tests
+### Python Unit Tests
 
 Allowed editors: vi, vim, emacs
 All your files should end with a new line
