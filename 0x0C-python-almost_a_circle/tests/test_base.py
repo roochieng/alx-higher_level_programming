@@ -7,8 +7,8 @@ import unittest
 import pep8
 import os
 from models.base import Base
-#from models.rectangle import Rectangle
-#from models.square import Square
+from models.rectangle import Rectangle
+from models.square import Square
 
 
 class TestBase(unittest.TestCase):
@@ -150,27 +150,27 @@ class TestBase(unittest.TestCase):
         if os.path.exists("Square.json"):
             os.remove("Square.json")
 
-        #rect_output = Rectangle.load_from_file()
-        #self.assertEqual(rect_output, [])
+        rect_output = Rectangle.load_from_file()
+        self.assertEqual(rect_output, [])
 
-        #square_output = Square.load_from_file()
-        #self.assertEqual(square_output, [])
+        square_output = Square.load_from_file()
+        self.assertEqual(square_output, [])
 
-        #warn = "load_from_file() takes 1 positional argument but 2 were given"
+        warn = "load_from_file() takes 1 positional argument but 2 were given"
 
-        """with self.assertRaises(TypeError) as msg:
+        with self.assertRaises(TypeError) as msg:
             Rectangle.load_from_file('Python')
 
-        self.assertEqual(warn, str(msg.exception))"""
+        self.assertEqual(warn, str(msg.exception))
 
     def test_create(self):
         """
         Test the create method
         """
-        #with self.assertRaises(TypeError) as msg:
-            #warn = Rectangle.create('Python')
+        with self.assertRaises(TypeError) as msg:
+            warn = Rectangle.create('Python')
 
-        """self.assertEqual(
+        self.assertEqual(
             "create() takes 1 positional argument but 2 were given",
             str(msg.exception)
-        )"""
+        )
