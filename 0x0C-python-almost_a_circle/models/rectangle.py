@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-...
+Rectangle Class
 """
 
 from models.base import Base
@@ -8,12 +8,12 @@ from models.base import Base
 
 class Rectangle(Base):
     """
-    ...
+    Rectangle class inheriting from Base class
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        ...
+        Rectangle Class constractor
         """
         super().__init__(id)
 
@@ -30,14 +30,14 @@ class Rectangle(Base):
     @property
     def width(self):
         """
-        ...
+        Width Property
         """
         return self.__width
 
     @width.setter
     def width(self, param):
         """
-        ...
+        Setting Width
         """
         self.check_integer_parameter(param, 'width')
 
@@ -46,14 +46,14 @@ class Rectangle(Base):
     @property
     def height(self):
         """
-        ...
+        Height Property
         """
         return self.__height
 
     @height.setter
     def height(self, param):
         """
-        ...
+        Setting height
         """
         self.check_integer_parameter(param, 'height')
 
@@ -62,14 +62,14 @@ class Rectangle(Base):
     @property
     def x(self):
         """
-        ...
+        X- axis property
         """
         return self.__x
 
     @x.setter
     def x(self, param):
         """
-        ...
+        Setting x axis
         """
         self.check_integer_parameter(param, 'x')
 
@@ -78,14 +78,14 @@ class Rectangle(Base):
     @property
     def y(self):
         """
-        ...
+        Y axis property
         """
         return self.__y
 
     @y.setter
     def y(self, param):
         """
-        ...
+        Setting Y axis
         """
         self.check_integer_parameter(param, 'y')
 
@@ -93,7 +93,7 @@ class Rectangle(Base):
 
     def check_integer_parameter(self, value, param):
         """
-        ...
+        Checking the integer parameter
         """
         if type(value) is not int:
             raise TypeError(param + ' must be an integer')
@@ -106,13 +106,13 @@ class Rectangle(Base):
 
     def area(self):
         """
-        ...
+        Area calculator method
         """
         return self.__width * self.__height
 
     def display(self):
         """
-        ...
+        Display method
         """
         if self.__y > 0:
             print('\n' * self.__y, end='')
@@ -125,7 +125,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """
-        ...
+        string method
         """
         return '[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}'.format(
             self.id, self.x, self.y, self.width, self.height
@@ -133,7 +133,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """
-        ...
+        Update method
         """
         argc = len(args)
         kwargc = len(kwargs)
@@ -152,7 +152,7 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """
-        ...
+        Dict to hold keys and values method
         """
         return {
             'id': self.id,
