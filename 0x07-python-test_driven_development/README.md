@@ -3,9 +3,9 @@
 
 ### Concepts
 
-For this project, we expect you to look at this concept:
+*For this project, we expect you to look at this concept:*
 
-[Never forget a test](https://intranet.alxswe.com/concepts/47)
+- [Never forget a test](https://intranet.alxswe.com/concepts/47)
 
 
 ## Background Context
@@ -14,28 +14,24 @@ For this project, we expect you to look at this concept:
 
 Starting from today:
 
-Based on the requirements of each task, you should always write the documentation (module(s) + function(s)) and tests first, before you actually code anything
+- Based on the requirements of each task, **you should always write the documentation (module(s) + function(s)) and tests first, before you actually code anything**
 
-The intranet checks for Python projects won’t be released before their first deadline, in order for you to focus more on TDD and think about all possible cases
+- The intranet checks for Python projects won’t be released before their first deadline, in order for you to focus more on TDD and think about all possible cases
 
-We strongly encourage you to work together on test cases, so that you don’t miss any edge case. But not in the implementation of them!
+- We strongly encourage you to work together on test cases, so that you don’t miss any edge case. **But not in the implementation of them!**
 
-Don’t trust the user, always think about all possible edge cases
+- **Don’t trust the user**, always think about all possible edge cases
 
 
 # Resources
 
 ### Read or watch:
 
-[doctest](https://intranet.alxswe.com/rltoken/BwZJVq2MQ1_Vg_3gphoitQ) — Test interactive Python examples (until “26.2.3.7. Warnings” included)
-
-[doctest – Testing through documentation](https://intranet.alxswe.com/rltoken/96kLRRIOHzsn3VDDXT21HA)
-
-[Unit Tests in Python](https://intranet.alxswe.com/rltoken/wfuUl81Q3Nku1qCzdDHAfA)
-
-[Unittest module](https://intranet.alxswe.com/rltoken/1v-d9Ol13JabJq8UI6MIPg)
-
-[Interactive and Non-interactive tests](https://intranet.alxswe.com/rltoken/lB65hNMXBziXy4A0YLIOog)
+- [doctest](https://docs.python.org/3.4/library/doctest.html) — Test interactive Python examples (until “26.2.3.7. Warnings” included)
+- [doctest – Testing through documentation](https://pymotw.com/3/doctest/)
+- [Unit Tests in Python](https://www.youtube.com/watch?v=1Lfv5tUGsn8)
+- [Unittest module](https://www.youtube.com/watch?v=6tNS--WetLI)
+- [Interactive and Non-interactive tests](https://mattermost.com/blog/testing-python-understanding-doctest-and-unittest/)
 
 # Learning Objectives
 
@@ -43,65 +39,44 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 ## General
 
-Why Python programming is awesome
+- Why Python programming is awesome
+- What’s an interactive test
+- Why tests are important
+- How to write Docstrings to create tests
+- How to write documentation for each module and function
+- What are the basic option flags to create tests
+- How to find edge cases
 
-What’s an interactive test
-
-Why tests are important
-
-How to write Docstrings to create tests
-
-How to write documentation for each module and function
-
-What are the basic option flags to create tests
-
-How to find edge cases
 
 ## Copyright - Plagiarism
 
-You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
-
-You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
-
-You are not allowed to publish any content of this project.
-
-Any form of plagiarism is strictly forbidden and will result in removal from the program.
+- You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
+- You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
+- You are not allowed to publish any content of this project.
+- Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
 
 # Requirements
 
 ### Python Scripts
 
-Allowed editors: vi, vim, emacs
+- Allowed editors: vi, vim, emacs
+- All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
+- All your files should end with a new line
+- A README.md file, at the root of the folder of the project, is mandatory
+- Your code should use the pycodestyle (version 2.8.)
+- All your files must be executable
+- The length of your files will be tested using wc
 
-All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
-
-All your files should end with a new line
-
-A README.md file, at the root of the folder of the project, is mandatory
-
-Your code should use the pycodestyle (version 2.8.*)
-
-All your files must be executable
-
-The length of your files will be tested using wc
 
 ### Python Test Cases
 
-Allowed editors: vi, vim, emacs
-
-All your files should end with a new line
-
-All your test files should be inside a folder tests
-
-All your test files should be text files (extension: .txt)
-
-All your tests should be executed by using this command: python3 -m doctest ./tests/*
-
-All your modules should have a documentation (python3 -c 'print(__import__(my_module).__doc__)')
-
-All your functions should have a documentation (python3 -c 'print(__import__(my_module).my_function.__doc__)')
-
-A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
-
-We strongly encourage you to work together on test cases, so that you don’t miss any edge case – The Checker is checking for tests!
+- Allowed editors: vi, vim, emacs
+- All your files should end with a new line
+- All your test files should be inside a folder tests
+- All your test files should be text files (extension: .txt)
+- All your tests should be executed by using this command: python3 -m doctest ./tests/
+- All your modules should have a documentation *(python3 -c 'print(__import__(my_module).__doc__)')*
+- All your functions should have a documentation *(python3 -c 'print(__import__(my_module).my_function.__doc__)')*
+- A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+- We strongly encourage you to work together on test cases, so that you don’t miss any edge case – The Checker is checking for tests!

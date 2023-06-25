@@ -1,10 +1,12 @@
+# 0x09. Python - Everything is object
+
 # Background Context
 
 Now that we understand that everything is an object and have a little bit of knowledge, let’s pause and look a little bit closer at how Python works with different types of objects.
 
 BTW, have you ever modified a variable without knowing it or wanting to? I mean:
 
-'''
+'''python
 >>> a = 1
 >>> b = a
 >>> a = 2
@@ -15,7 +17,7 @@ BTW, have you ever modified a variable without knowing it or wanting to? I mean:
 
 OK. But what about this?
 
-'''
+'''python
 >>> l = [1, 2, 3]
 >>> m = l
 >>> l[0] = 'x'
@@ -24,13 +26,13 @@ OK. But what about this?
 >>>
 '''
 
-This project is a little bit different than the usual projects. The first part is only questions about Python’s specificity like “What would be the result of…”. You should read all documentation first (as usual :)), then take the time to think and brainstorm with your peers about what you think and why. Try to do this without coding anything for a few hours.
+This project is a little bit different than the usual projects. The first part is only questions about Python’s specificity like “What would be the result of…”. **You should read all documentation first (as usual :))**, then take the time to **think and brainstorm with your peers about** what you think and why. **Try to do this without coding anything for a few hours.**
 
-Trying examples in the Python interpreter will give you most of the answers without having to think about it. Don’t go this route. First read, then think, then brainstorm together. Only then you can test in the interpreter.
+Trying examples in the Python interpreter will give you most of the answers without having to think about it. **Don’t go this route**. First read, then think, then brainstorm together. Only then you can test in the interpreter.
 
 It’s important that you truly understand the reasons behind the answers of all those tasks so that you can apply the same logic to other variables and other variable types.
 
-Note that during interviews for Python positions, you will most likely have to answer to these type of questions.
+Note that during interviews for Python positions, **you will most likely have to answer to these type of questions.**
 
 All your answers should be only one line in a file. No space before or after the answer.
 
@@ -40,85 +42,58 @@ All your answers should be only one line in a file. No space before or after the
 ## Read or watch:
 
 
-[9.10. Objects and values](https://intranet.alxswe.com/rltoken/MrtBogRzYETxnSKG97E7Sg)
+- [9.10. Objects and values](http://www.openbookproject.net/thinkcs/python/english2e/ch09.html#objects-and-values)
+- [9.11. Aliasing](http://www.openbookproject.net/thinkcs/python/english2e/ch09.html#aliasing)
+- [Immutable vs mutable types](https://stackoverflow.com/questions/8056130/immutable-vs-mutable-types)
+- [Mutation (Only this chapter)](http://composingprograms.com/pages/24-mutable-data.html#sequence-objects)
+- [9.12. Cloning lists](http://www.openbookproject.net/thinkcs/python/english2e/ch09.html#cloning-lists)
+- [Python tuples: immutable but potentially changing](http://radar.oreilly.com/2014/10/python-tuples-immutable-but-potentially-changing.html)
 
-[9.11. Aliasing](https://intranet.alxswe.com/rltoken/Ro-7kVXtmWyAeOXEw7RhSg)
-
-[Immutable vs mutable types](https://intranet.alxswe.com/rltoken/X1lEmkwQRWI3fP4W7bq_qw)
-
-[Mutation (Only this chapter)](https://intranet.alxswe.com/rltoken/HpKOdgDg6GIoBoG0UPOgPA)
-
-[9.12. Cloning lists](https://intranet.alxswe.com/rltoken/-Gi4PX4srBYFKpZ5Er6sqA)
-
-[Python tuples: immutable but potentially changing](https://intranet.alxswe.com/rltoken/NZIom4L-tS0HjpY_uEVr9A)
 
 ## Learning Objectives
-
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 
 ## General
 
-Why Python programming is awesome
+- Why Python programming is awesome
+- What is an object
+- What is the difference between a class and an object or instance
+- What is the difference between immutable object and mutable object
+- What is a reference
+- What is an assignment
+- What is an alias
+- How to know if two variables are identical
+- How to know if two variables are linked to the same object
+- How to display the variable identifier (which is the memory address in the CPython implementation)
+- What is mutable and immutable
+- What are the built-in mutable types
+- What are the built-in immutable types
+- How does Python pass variables to functions
 
-What is an object
 
-What is the difference between a class and an object or instance
+## Copyright - Plagiarism
 
-What is the difference between immutable object and mutable object
+- You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
+- You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
+- You are not allowed to publish any content of this project.
+- Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
-What is a reference
 
-What is an assignment
+# Requirements
 
-What is an alias
+## Python Scripts
 
-How to know if two variables are identical
-
-How to know if two variables are linked to the same object
-
-How to display the variable identifier (which is the memory address in the CPython implementation)
-
-What is mutable and immutable
-
-What are the built-in mutable types
-
-What are the built-in immutable types
-
-How does Python pass variables to functions
-
-### Copyright - Plagiarism
-
-You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
-
-You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
-
-You are not allowed to publish any content of this project.
-
-Any form of plagiarism is strictly forbidden and will result in removal from the program.
-
-## Requirements
-
-### Python Scripts
-
-Allowed editors: vi, vim, emacs
-
-All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
-
-All your files should end with a newline character
-
-A README.md file, at the root of the folder of the project, is mandatory
-
-Your code should use the pycodestyle (version 2.8.*)
-
-All your files must be executable
-
-The length of your files will be tested using wc
+- Allowed editors: vi, vim, emacs
+- All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
+- All your files should end with a newline character
+- A README.md file, at the root of the folder of the project, is mandatory
+- Your code should use the pycodestyle (version 2.8.)
+- All your files must be executable
+- The length of your files will be tested using wc
 
 ### .txt Answer Files
 
-Only one line
-
-No Shebang
-
-All your files should end with a new line
+- Only one line
+- No Shebang
+- All your files should end with a new line
