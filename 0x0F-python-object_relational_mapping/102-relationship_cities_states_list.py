@@ -10,7 +10,7 @@ if __name__ == "__main__":
     from sqlalchemy.orm import Session
     from sqlalchemy.schema import Table
 
-    engine = create_engine(f'mysql+mysqldb://{sys.argv[1]}:{sys.argv[2]}@localhost/{sys.argv[3]}', pool_pre_ping=True)
+    engine = create_engine(f'mysql+mysqldb://{sys.argv[1]}:{sys.argv[2]}@localhost/{sys.argv[3]}', pool_pre_ping = True)
     Base.metadata.create_all(engine)
 
     session = Session(engine)
