@@ -11,10 +11,10 @@ if __name__ == "__main__":
 
     message = requests.get(url)
     commits = message.json()
-    print(commits)
     try:
         for i in range(10):
-            print(f"{commits[i].get('sha')}:
-                  {commits[i].get('commit').get('author').get('name')}")
+            print("{}: {}".format(
+                 commits[i].get("sha"),
+                 commits[i].get("commit").get("author").get("name")))
     except IndexError:
         pass
