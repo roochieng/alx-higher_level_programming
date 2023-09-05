@@ -6,7 +6,7 @@ import requests
 
 
 if __name__ == "__main__":
-    url = f"https://api.github.com/repos/roochieng/alx-higher_level_programming/commits"
+    url = f"https://api.github.com/repos/{sys.argv[2]}/{sys.argv[1]}/commits"
 
     m = requests.get(url)
     commits = m.json()
